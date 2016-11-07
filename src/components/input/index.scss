@@ -1,0 +1,108 @@
+bt-input {
+  display: block;
+
+
+  input ~ label {
+    font-weight: normal;
+  }
+}
+
+bt-input[type="hidden"] {
+  .form-group {
+    margin-bottom: 5px;
+  }
+}
+
+bt-input + bt-input{
+  .form-group {
+    margin-bottom: 0;
+  }
+}
+
+bt-input .form-group:last-child {
+  margin-bottom: 0;
+}
+
+td bt-input[type="checkbox"] {
+  margin-top: 5px;
+}
+.form-control-feedback{
+  position:absolute!important;
+}  
+.form-group{
+  margin-bottom:6px!important;
+}
+.form-control {
+    border: 1px solid #D3DFE2;
+    border-radius: 4px!important;
+    background-color:#feffff!important;
+    &:disabled{
+      background-color:#e6eef0!important;
+    }
+    ::-webkit-input-placeholder {
+       font-weight:200!important;
+    }
+    
+    :-moz-placeholder { /* Firefox 18- */
+       font-weight:200!important;
+    }
+
+    ::-moz-placeholder {  /* Firefox 19+ */
+       font-weight:200!important;
+    }
+
+    :-ms-input-placeholder {  
+       font-weight:200!important;
+    }
+  }
+  label {
+    font-size: .9em!important;
+    font-weight: 200!important;
+}
+
+input.faChkSqr ~ label {
+  margin-top: 5px;
+  font-size: 15px!important;
+}
+input.faChkRnd, input.faChkSqr {
+  visibility: hidden;
+}
+
+input.faChkRnd:checked:after, input.faChkRnd:after,
+input.faChkSqr:checked:after, input.faChkSqr:after {
+  visibility: visible;
+  font-family: FontAwesome;
+  font-size:16px;
+  height: 18px; 
+  width: 18px;
+  position: relative;
+  top: -3px;
+  left: 0px;
+  background-color:#FFF;
+  display: inline-block;
+}
+
+input.faChkRnd:checked:after {
+  content: '\f058';
+}
+
+input.faChkRnd:after {
+  content: '\f10c';
+}
+
+input.faChkSqr:checked:after {
+  content: '\f14a';
+}
+
+input.faChkSqr:after {
+  content: '\f096';
+}
+.input-group .form-control:first-child, .input-group-addon:first-child, .input-group-btn:first-child > .btn, .input-group-btn:first-child > .btn-group > .btn, .input-group-btn:first-child > .dropdown-toggle, .input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle), .input-group-btn:last-child > .btn-group:not(:last-child) > .btn {
+  border-bottom-right-radius: 0!important;
+  border-top-right-radius: 0!important;
+ 
+}
+.input-group > .form-control{
+   margin-bottom:0px!important;
+}
+    

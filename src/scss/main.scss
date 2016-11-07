@@ -1,0 +1,12 @@
+//@import 'fonts';
+@import '_variables';
+@import 'node_modules/bootstrap/scss/bootstrap';
+
+html, body{
+  background: yellowgreen;
+}
+
+h1{
+  font-size: 20.2vmin;
+  color:#333;
+}
